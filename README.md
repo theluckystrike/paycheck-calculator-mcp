@@ -50,7 +50,7 @@ claude mcp add --transport http paycheck-calculator https://paycheck-calculator-
 Or run it locally:
 
 ```
-claude mcp add paycheck-calculator -- npx -y github:theluckystrike/paycheck-calculator-mcp
+claude mcp add paycheck-calculator -- npx -y paycheck-calculator-mcp
 ```
 
 ### Claude Desktop
@@ -62,7 +62,7 @@ Add this to `claude_desktop_config.json`:
   "mcpServers": {
     "paycheck-calculator": {
       "command": "npx",
-      "args": ["-y", "github:theluckystrike/paycheck-calculator-mcp"]
+      "args": ["-y", "paycheck-calculator-mcp"]
     }
   }
 }
