@@ -1,0 +1,32 @@
+{
+  "name": "paycheck-calculator-mcp",
+  "version": "1.0.0",
+  "description": "Paycheck calculator MCP server: 2025-2026 take-home pay with IRS brackets, FICA wage base and state income tax for 50 states + DC.",
+  "type": "module",
+  "bin": {
+    "paycheck-calculator-mcp": "dist/stdio.js"
+  },
+  "main": "dist/stdio.js",
+  "files": ["dist", "README.md", "LICENSE", "DATA_SOURCES.md"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test test/*.test.mjs",
+    "deploy": "wrangler deploy"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "paycheck-calculator", "take-home-pay", "salary", "payroll", "income-tax", "fica", "state-tax", "irs"],
+  "author": "theluckystrike",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/theluckystrike/paycheck-calculator-mcp.git" },
+  "homepage": "https://statewage.com",
+  "mcpName": "io.github.theluckystrike/paycheck-calculator-mcp",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.6.3",
+    "wrangler": "^4.40.0"
+  }
+}

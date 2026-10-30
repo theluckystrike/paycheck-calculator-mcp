@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.theluckystrike/paycheck-calculator-mcp",
+  "title": "Paycheck Calculator",
+  "description": "Take-home pay for 2025-2026: IRS brackets, OBBBA standard deduction, FICA wage base, state tax for 50 states + DC.",
+  "version": "1.0.0",
+  "websiteUrl": "https://statewage.com",
+  "repository": {
+    "url": "https://github.com/theluckystrike/paycheck-calculator-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://paycheck-calculator-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}
